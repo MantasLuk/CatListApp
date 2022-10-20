@@ -13,7 +13,7 @@ Project is created with:
 clone the repo: 
 ```
 git clone https://github.com/MantasLuk/CatListApp.git
-$ cd `directory name`
+$ cd [folder name]
 ```
 Install the `npm` packages described in the `package.json` and verify that it works:
 ```
