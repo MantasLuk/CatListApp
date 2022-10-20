@@ -1,10 +1,28 @@
+
 # CatListApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
 
+Project is created with:
+* Angular version 14.2.6
+* Angular Material version 14.2.5
+* AlertifyJS version 1.13.1
+
+## Setup
+
+clone the repo: 
+```
+git clone https://github.com/
+$ cd ../
+```
+Install the `npm` packages described in the `package.json` and verify that it works:
+$ npm install
+$ npm start
+```
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Shut it down manually with `Ctrl-C`.
 
 ## Code scaffolding
 
