@@ -1,0 +1,55 @@
+<h2>The Cat List</h2>
+
+<div class="mat-elevation-z8">
+  <div>
+    <a mat-raised-button color="primary" (click)="openPopup('')"
+      >Add New Cat !!!</a
+    >
+  </div>
+  <table mat-table [dataSource]="allCatData" class="mat-elevation-z8">
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef>Name</th>
+      <td mat-cell *matCellDef="let element">{{ element.info.name }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="age">
+      <th mat-header-cell *matHeaderCellDef>Age</th>
+      <td mat-cell *matCellDef="let element">
+        {{ element.info.age | number }}
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="description">
+      <th mat-header-cell *matHeaderCellDef>Description</th>
+      <td mat-cell *matCellDef="let element">
+        {{ element.info.description }}
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="action">
+      <th mat-header-cell *matHeaderCellDef>Action</th>
+      <td mat-cell *matCellDef="let element">
+        <div class="icons">
+          <mat-icon
+            color="primary"
+            matTooltip="Edit Cat data"
+            matTooltipPosition="left"
+            (click)="editCat(element.id)"
+            >edit</mat-icon
+          >
+          <mat-icon
+            color="warn"
+            matTooltip="Remove poor Cat"
+            matTooltipPosition="right"
+            (click)="deleteCat(element.id)"
+            >delete</mat-icon
+          >
+        </div>
+      </td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayColumns"></tr>
+  </table>
+  <mat-paginator [pageSizeOptions]="[4, 8, 12]" showFirstLastButtons>
+  </mat-paginator>
+</div>

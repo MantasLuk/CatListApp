@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+@import "../node_modules/alertifyjs/build/css/alertify.css";
+@import "../node_modules/alertifyjs/build/css/themes/bootstrap.min.css";
+@import "../node_modules/alertifyjs//build/css/themes/default.min.css";
+
+html,
+body {
+  height: 100vh;
+}
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.mat-dialog-container {
+  background: #cfcfcf;
+}
+
+.mat-header-row {
+  background: #e4e4e4;
+}
+.ajs-content {
+  font-size: large;
+  line-height: 2rem;
+}

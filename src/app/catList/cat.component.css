@@ -1,0 +1,18 @@
+.mat-elevation-z8 {
+  width: 80vw;
+}
+
+.mat-raised-button {
+  margin: 0.75rem;
+}
+tr.mat-row:nth-child(even) {
+  background-color: #fbfbfb;
+}
+h2 {
+  padding: 2rem 0;
+}
+
+.icons {
+  display: flex;
+  gap: 0.75rem;
+}
